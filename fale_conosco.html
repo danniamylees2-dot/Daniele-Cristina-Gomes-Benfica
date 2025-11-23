@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões</title>
+<style>
+body {
+    font-family: Arial, italic;
+    background-color: #130b0b;
+    color: rgb(34, 4, 4);
+    margin: 0;
+    padding: 0;
+}
+.logo-uniube {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.logo-uniube img {
+    width: 90px;
+    height: auto;
+}
+nav {
+    text-align: center;
+    margin-top: 120px;
+}
+nav a {
+    color: #533f10;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 600px;
+    margin: 140px auto 0 auto; 
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000055;
+}
+h1 {
+    font-size: 32px;
+    color: #533f10;
+}
+
+label {
+    font-size: 18px;
+    color: #533f10;
+    display: block;
+    margin-top: 15px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: #1f1f1f;
+    border: 2px solid #533f10;
+    border-radius: 5px;
+    color: rgb(34, 4, 4);
+    font-size: 16px;
+}
+textarea {
+    height: 120px;
+}
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #533f10;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(32, 7, 7);
+    font-weight: bold;
+}
+button:hover {
+    background-color: #533f10;
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #533f10;
+    font-size: 18px;
+    background-color: #1b1111;
+}
+</style>
+</head>
+<body>
+    <div class="logo-uniube">
+        <img src="imagens/logoUniube.png" alt="Logo Uniube">
+    </div>
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="links.html">Links Úteis</a> |
+        <a href="imagens.html">Imagens</a> |
+        <a href="fale_conosco.html">Fale Conosco</a>
+    </nav>
+    <div class="container">
+        <h1>Envie suas sugestões</h1>
+        <form action="enviar.php" method="POST">
+            <label for="name">Seu nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Sugestão:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar sugestão</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Fan Page TVD</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1167128, Daniele Cristina Gomes Benfica</title>
+    <link rel="icon" href="imagens/uniube.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: #504507;
+        }
+        header {
+            margin: 0;
+            padding: 20px;
+            background-color: #180808; 
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+        nav, main, footer {
+            margin: 20px;
+            padding: 20px;
+            background-color: #1f0a0a;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #504507;
+            text-decoration: none;
+            margin-right: 40px;
+        }
+        .container-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background-color: #310e0e;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 150px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #9b1212;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://uniube.br" target="_blank" rel="noopener noreferrer">
+            <img src="imagens/logoUniube.png" alt="Logo da Uniube">
+        </a>
+        <h1>Galeria de Personagens - The Vampire Diaries</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="links.html">Links Úteis</a> |
+        <a href="imagens.html">Imagens</a> |
+        <a href="fale_conosco.html">Fale Conosco</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Protagonistas de Mystic Falls</h2>
+            <p>Conheça os principais personagens da saga:</p>
+            <div class="container-galeria">
+                <div class="card">
+                    <img src="imagens/Damon.jpeg" alt="Damon Salvatore">
+                    <h3>Damon Salvatore</h3>
+                    <p>O vampiro impulsivo e sarcástico.</p>
+                </div>
+                <div class="card">
+                    <img src="imagens/Stefan.jpeg" alt="Stefan Salvatore">
+                    <h3>Stefan Salvatore</h3>
+                    <p>O irmão leal com um passado sombrio.</p>
+                </div>
+                <div class="card">
+                    <img src="imagens/Elena.jpeg" alt="Elena Gilbert">
+                    <h3>Elena Gilbert</h3>
+                    <p>A duplicata no centro de tudo.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Resumo das Temporadas</h2>
+            <p>Abaixo, um guia rápido sobre os principais arcos e acontecimentos de Mystic Falls:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Temporada</th>
+                        <th>Vilão / Foco</th>
+                        <th>Evento Chave</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1ª Temporada</td><td>A Tumba e Katherine</td><td>Retorno de Katherine Pierce</td></tr>
+                    <tr><td>2ª Temporada</td><td>Klaus e a Maldição</td><td>Klaus se torna o Híbrido Original</td></tr>
+                    <tr><td>3ª Temporada</td><td>Família Original</td><td>Elena morre e vira vampira</td></tr>
+                    <tr><td>4ª Temporada</td><td>Silas e a Cura</td><td>Despertar de Silas</td></tr>
+                    <tr><td>5ª Temporada</td><td>Os Viajantes</td><td>Colapso do "Outro Lado"</td></tr>
+                    <tr><td>6ª Temporada</td><td>Kai Parker (Mundo Prisão)</td><td>Elena entra em sono profundo</td></tr>
+                    <tr><td>7ª Temporada</td><td>Os Hereges</td><td>Damon e Enzo presos no cofre</td></tr>
+                    <tr><td>8ª Temporada</td><td>O Inferno (Arcadius)</td><td>Sacrifício final de Stefan</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Fan Page TVD</p>
+    </footer>
+</body>
+</html>
